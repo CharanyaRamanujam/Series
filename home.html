@@ -1,0 +1,64 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item value="firstpage" (click)="test5('firstpage')">
+        About
+      </button>
+      <button ion-item (click)="test6()">
+        help
+      </button>
+      <button ion-item (click)="test7()">
+        settings
+      </button>
+    </ion-list>
+   </ion-content>
+  </ion-menu>
+
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center > 
+      QUIZ MASTER..!!{{me}}
+    }
+    }
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding  #content>
+ <div class="card">
+  Welcome to the quiz dhamaka! There are categories for you to choose and each category has its own divisions with questions varying from low difficulty to high difficulty. Every right question rewards you with two points and the wrong one pulls your score down by 3. So be carefull and don't forget to have fun xp  
+</div>
+
+  
+   <ion-card col-5 offset-6 >
+    <ion-img width="500" height="300" src="assets/imgs/36566f15-dd32-4b7c-a71d-ba151bae0331.jpg" (click)="test1()"></ion-img>
+    <div class="card-title">SERIES</div>
+    <div class="card-subtitle">3 listings</div>
+  </ion-card>
+ 
+  <ion-card col-5>
+    <ion-img width="500" height="500" src="assets/imgs/8281fadb7336e7ced706e1043e023e1c.jpg" (click)="test2()"></ion-img>
+    <div class="card-title">MOVIES</div>
+    <div class="card-subtitle">3 Listings</div>
+  </ion-card>
+
+  <ion-card col-5 offset-6>
+    <ion-img width="500" height="500" src="assets/imgs/bands_quotation_small.png" (click)="test3()"></ion-img>
+    <div class="card-title">BANDS</div>
+    <div class="card-subtitle">3 Listings</div>
+  </ion-card>
+
+  <ion-card col-5>
+    <ion-img width="500" height="300" src="assets/imgs/anime_collage_by_thevocaloidone-d61heh8.jpg" (click)="test4()"></ion-img>
+    <div class="card-title">ANIMES</div>
+    <div class="card-subtitle">2 Listings</div>
+  </ion-card>
+</ion-content>

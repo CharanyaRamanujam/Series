@@ -1,0 +1,76 @@
+<!--
+  Generated template for the SeriesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>friends</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <ion-list radio-group>
+   <ion-list-header>
+     Who talked first in the pilot episode?
+   </ion-list-header>
+
+   <ion-item>
+     <ion-label>Ross</ion-label>
+     <ion-radio value="Ross" (click)="exp('Ross')"></ion-radio>
+   </ion-item>
+
+   <ion-item>
+     <ion-label>Monica</ion-label>
+     <ion-radio value="Monica" (click)="exp('Monica')"></ion-radio>
+   </ion-item>
+
+   <ion-item>
+     <ion-label>Chandler</ion-label>
+     <ion-radio value="Chandler" (click)="exp('Chandler')"></ion-radio>
+   </ion-item>
+   </ion-list>
+   <ion-list radio-group>
+     <ion-list-header>
+       What is the name of Ross's first child?
+     </ion-list-header>
+
+     <ion-item>
+       <ion-label>Emma</ion-label>
+       <ion-radio value="Emma" (click)="exp('Emma')"></ion-radio>
+     </ion-item>
+
+     <ion-item>
+       <ion-label>Ben</ion-label>
+       <ion-radio value="Ben" disabled="false" (click)="exp('Ben')"></ion-radio>
+     </ion-item>
+
+     <ion-item>
+       <ion-label>Emily</ion-label>
+       <ion-radio value="Emily" disabled="false" (click)="exp('Emily')"></ion-radio>
+     </ion-item>
+   </ion-list>
+ <ion-list radio-group>
+   <ion-list-header>
+     How many sisters did Joey had?
+   </ion-list-header>
+
+   <ion-item>
+     <ion-label>five</ion-label>
+     <ion-radio value="five"(click)="exp('five')"></ion-radio>
+   </ion-item>
+
+   <ion-item>
+     <ion-label>seven</ion-label>
+     <ion-radio value="seven" (click)="exp('seven')"></ion-radio>
+   </ion-item>
+
+   <ion-item>
+     <ion-label>nine</ion-label>
+     <ion-radio value="nine" (click)="exp('nine')"></ion-radio>
+   </ion-item>
+ </ion-list>
